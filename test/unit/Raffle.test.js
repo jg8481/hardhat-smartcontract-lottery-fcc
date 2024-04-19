@@ -141,7 +141,7 @@ const { developmentChains, networkConfig } = require("../../helper-hardhat-confi
             // An event listener for the WinnerPicked is set up
             // Mocks of chainlink keepers and vrf coordinator are used to kickoff this winnerPicked event
             // All the assertions are done once the WinnerPicked event is fired
-              it("picks a winner, resets, and sends money", async () => {
+              it("picks a winner, resets, and sends money... this may fail if attempting to use the Lesson8CodeSessions_Raffle.sol contract with the calculatePrizeMultiplier function", async () => {
                   const additionalEntrances = 3 // to test
                   const startingIndex = 2
                   let startingBalance

@@ -1,0 +1,8 @@
+
+Now running the enter.js interactive script to interact with the Lottery smart contract...
+
+yarn run v1.22.22
+$ /Users/jgorospe/Documents/GitHub/hardhat-smartcontract-lottery-fcc/node_modules/.bin/hardhat run scripts/enter.js --network sepolia
+Entered!
+Done in 3.06s.
+

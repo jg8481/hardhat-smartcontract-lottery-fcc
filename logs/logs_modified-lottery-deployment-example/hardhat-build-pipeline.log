@@ -1,0 +1,361 @@
+
+BUILD STAGE 1 :: INSTALL THE REQUIRED TOOLS
+
+[3J[H[2J
+------------------------------------[[[[ Install-Tools-On-MacOS-Or-Linux ]]]]------------------------------------
+
+This command will install all of the required Node.js packages. This script was created on MacOS, but can be used in any Linux Distro that has curl installed. This run started on Thu Apr 18 22:56:14 EDT 2024.
+
+=> nvm is already installed in /Users/jgorospe/.nvm, trying to update using git
+=> => Compressing and cleaning up git repository
+
+=> nvm source string already in /Users/jgorospe/.bashrc
+=> bash_completion source string already in /Users/jgorospe/.bashrc
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+Now using node v18.20.2 (npm v10.5.2)
+Now using node v18.20.2 (npm v10.5.2)
+[0;32mdefault[0m [0;90m->[0m [0;32m18[0m ([0;90m->[0m [0;32mv18.20.2[0m)
+v18.20.2
+yarn info v1.22.22
+Done in 0.67s.
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+info This module is OPTIONAL, you can safely ignore this error
+info This module is OPTIONAL, you can safely ignore this error
+Done in 40.65s.
+yarn run v1.22.22
+$ /Users/jgorospe/Documents/GitHub/hardhat-smartcontract-lottery-fcc/node_modules/.bin/hardhat
+Hardhat version 2.22.1
+
+Usage: hardhat [GLOBAL OPTIONS] [SCOPE] <TASK> [TASK OPTIONS]
+
+GLOBAL OPTIONS:
+
+  --config           	A Hardhat config file. 
+  --emoji            	Use emoji in messages. 
+  --flamegraph       	Generate a flamegraph of your Hardhat tasks 
+  --help             	Shows this message, or a task's help if its name is provided 
+  --max-memory       	The maximum amount of memory that Hardhat can use. 
+  --network          	The network to connect to. 
+  --show-stack-traces	Show stack traces (always enabled on CI servers). 
+  --tsconfig         	A TypeScript config file. 
+  --typecheck        	Enable TypeScript type-checking of your scripts/tests 
+  --verbose          	Enables Hardhat verbose logging 
+  --version          	Shows hardhat's version. 
+
+
+AVAILABLE TASKS:
+
+  check              	Check whatever you need
+  clean              	Clears the cache and deletes all artifacts
+  compile            	Compiles the entire project, building all artifacts
+  console            	Opens a hardhat console
+  coverage           	Generates a code coverage report for tests
+  deploy             	Deploy contracts
+  etherscan-verify   	submit contract source code to etherscan
+  export             	export contract deployment of the specified network into one file
+  export-artifacts   	
+  flatten            	Flattens and prints contracts and their dependencies. If no file is passed, all the contracts in the project will be flattened.
+  gas-reporter:merge 	
+  help               	Prints this message
+  node               	Starts a JSON-RPC server on top of Hardhat EVM
+  run                	Runs a user-defined script after compiling the project
+  size-contracts     	Output the size of compiled contracts
+  sourcify           	submit contract source code to sourcify (https://sourcify.dev)
+  test               	Runs mocha tests
+  verify             	Verifies contract on Etherscan
+
+
+AVAILABLE TASK SCOPES:
+
+  vars               	Manage your configuration variables
+
+To get help for a specific task run: npx hardhat help [SCOPE] <TASK>
+
+Done in 1.47s.
+Hardhat version 2.22.1
+
+Usage: hardhat [GLOBAL OPTIONS] [SCOPE] <TASK> [TASK OPTIONS]
+
+GLOBAL OPTIONS:
+
+  --config           	A Hardhat config file. 
+  --emoji            	Use emoji in messages. 
+  --flamegraph       	Generate a flamegraph of your Hardhat tasks 
+  --help             	Shows this message, or a task's help if its name is provided 
+  --max-memory       	The maximum amount of memory that Hardhat can use. 
+  --network          	The network to connect to. 
+  --show-stack-traces	Show stack traces (always enabled on CI servers). 
+  --tsconfig         	A TypeScript config file. 
+  --typecheck        	Enable TypeScript type-checking of your scripts/tests 
+  --verbose          	Enables Hardhat verbose logging 
+  --version          	Shows hardhat's version. 
+
+
+AVAILABLE TASKS:
+
+  check              	Check whatever you need
+  clean              	Clears the cache and deletes all artifacts
+  compile            	Compiles the entire project, building all artifacts
+  console            	Opens a hardhat console
+  coverage           	Generates a code coverage report for tests
+  deploy             	Deploy contracts
+  etherscan-verify   	submit contract source code to etherscan
+  export             	export contract deployment of the specified network into one file
+  export-artifacts   	
+  flatten            	Flattens and prints contracts and their dependencies. If no file is passed, all the contracts in the project will be flattened.
+  gas-reporter:merge 	
+  help               	Prints this message
+  node               	Starts a JSON-RPC server on top of Hardhat EVM
+  run                	Runs a user-defined script after compiling the project
+  size-contracts     	Output the size of compiled contracts
+  sourcify           	submit contract source code to sourcify (https://sourcify.dev)
+  test               	Runs mocha tests
+  verify             	Verifies contract on Etherscan
+
+
+AVAILABLE TASK SCOPES:
+
+  vars               	Manage your configuration variables
+
+To get help for a specific task run: npx hardhat help [SCOPE] <TASK>
+
+
+
+This run ended on Thu Apr 18 22:57:29 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson8CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson8CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-A-Specific-Network hardhat
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Hardhat-Test
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Interactive-Script-Test enter.js localhost
+
+If you're running this for the first time run the following before running any of these scripts.
+
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Hardhat local blockchain node.
+
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-A-Specific-Network hardhat
+
+You can also use the provided Lesson8CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson8CodeSessions_start-automation-build-pipeline.sh
+
+
+
+BUILD STAGE 2 :: TEST THE DEPLOYED SMART CONTRACT(S) ON A LOCAL BLOCKCHAIN NODE AND RUN AN INTERACTIVE CHECK
+
+[3J[H[2J
+------------------------------------[[[[ Start-Hardhat-Test ]]]]------------------------------------
+
+This command will run the Start-Hardhat-Test script. This run started on Thu Apr 18 22:57:31 EDT 2024.
+
+
+  Raffle Unit Tests
+    constructor
+      ✔ initializes the raffle correctly
+    enterRaffle
+      ✔ reverts when you don't pay enough
+      ✔ records player when they enter
+      ✔ emits event on enter
+      ✔ doesn't allow entrance when raffle is calculating
+    checkUpkeep
+      ✔ returns false if people haven't sent any ETH
+      ✔ returns false if raffle isn't open
+      ✔ returns false if enough time hasn't passed
+      ✔ returns true if enough time has passed, has players, eth, and is open
+    performUpkeep
+      ✔ can only run if checkupkeep is true
+      ✔ reverts if checkup is false
+      ✔ updates the raffle state and emits a requestId
+    fulfillRandomWords
+      ✔ can only be called after performupkeep
+WinnerPicked event fired!
+
+      1) picks a winner, resets, and sends money... this may fail if attempting to use the Lesson8CodeSessions_Raffle.sol contract with the calculatePrizeMultiplier function
+
+
+  13 passing (6s)
+  1 failing
+
+  1) Raffle Unit Tests
+       fulfillRandomWords
+         picks a winner, resets, and sends money... this may fail if attempting to use the Lesson8CodeSessions_Raffle.sol contract with the calculatePrizeMultiplier function:
+
+      AssertionError: expected '9999990299165376093856' to equal '10000029899165376093856'
+      + expected - actual
+
+      -9999990299165376093856
+      +10000029899165376093856
+      
+      at FragmentRunningEvent.<anonymous> (test/unit/Raffle.test.js:171:38)
+
+
+
+·-----------------------------------------------|----------------------------|-------------|-----------------------------·
+|              Solc version: 0.8.7              ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
+················································|····························|·············|······························
+|  Methods                                                                                                               │
+·························|······················|··············|·············|·············|···············|··············
+|  Contract              ·  Method              ·  Min         ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+·························|······················|··············|·············|·············|···············|··············
+|  Raffle                ·  enterRaffle         ·       74208  ·      91308  ·      87644  ·           14  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  Raffle                ·  performUpkeep       ·           -  ·          -  ·     101777  ·            7  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  addConsumer         ·           -  ·          -  ·      71433  ·            1  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  createSubscription  ·           -  ·          -  ·      68660  ·            2  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  fulfillRandomWords  ·           -  ·          -  ·     111252  ·            1  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  fundSubscription    ·           -  ·          -  ·      30433  ·            1  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  Deployments                                  ·                                          ·  % of limit   ·             │
+················································|··············|·············|·············|···············|··············
+|  Raffle                                       ·           -  ·          -  ·    1349332  ·        4.5 %  ·          -  │
+················································|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock                         ·           -  ·          -  ·    2984688  ·        9.9 %  ·          -  │
+·-----------------------------------------------|--------------|-------------|-------------|---------------|-------------·
+
+This run ended on Thu Apr 18 22:57:50 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson8CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson8CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-A-Specific-Network hardhat
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Hardhat-Test
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Interactive-Script-Test enter.js localhost
+
+If you're running this for the first time run the following before running any of these scripts.
+
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Hardhat local blockchain node.
+
+bash ./Lesson8CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-A-Specific-Network hardhat
+
+You can also use the provided Lesson8CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson8CodeSessions_start-automation-build-pipeline.sh
+
+
+
+Now running the modified.js interactive script to interact with the Lottery smart contract...
+
+yarn run v1.22.22
+$ /Users/jgorospe/Documents/GitHub/hardhat-smartcontract-lottery-fcc/node_modules/.bin/hardhat run scripts/modified.js --network localhost
+ 
+ 
+====>>>> Interactive Test Run Starting <<<<====
+ 
+ 
+This modified.js script will quickly check and interact with the deployed Modified Lottery smart contract from a local Hardhat Node. This modified smart contract will never be deployed to Testnet or Mainnet.
+ 
+ 
+Entered! This enterRaffle check passed and is using a modified version of Patrick's Lottery smart contract. It utilizes a new PrizeMultiplier that gives winners a bonus.
+ 
+ 
+====>>>> Interactive Test Run Finished <<<<====
+ 
+ 
+Done in 2.08s.
+
+
+
+
+WARNING: TEST FAILURES WERE DETECTED! THIS AUTOMATION PIPELINE WILL FAIL AND STOP DEPLOYMENT TO THE ETHEREUM TESTNET.
+
+
+
+  Raffle Unit Tests
+    constructor
+      ✔ initializes the raffle correctly
+    enterRaffle
+      ✔ reverts when you don't pay enough
+      ✔ records player when they enter
+      ✔ emits event on enter
+      ✔ doesn't allow entrance when raffle is calculating
+    checkUpkeep
+      ✔ returns false if people haven't sent any ETH
+      ✔ returns false if raffle isn't open
+      ✔ returns false if enough time hasn't passed
+      ✔ returns true if enough time has passed, has players, eth, and is open
+    performUpkeep
+      ✔ can only run if checkupkeep is true
+      ✔ reverts if checkup is false
+      ✔ updates the raffle state and emits a requestId
+    fulfillRandomWords
+      ✔ can only be called after performupkeep
+WinnerPicked event fired!
+
+      1) picks a winner, resets, and sends money... this may fail if attempting to use the Lesson8CodeSessions_Raffle.sol contract with the calculatePrizeMultiplier function
+
+
+  13 passing (6s)
+  1 failing
+
+  1) Raffle Unit Tests
+       fulfillRandomWords
+         picks a winner, resets, and sends money... this may fail if attempting to use the Lesson8CodeSessions_Raffle.sol contract with the calculatePrizeMultiplier function:
+
+      AssertionError: expected '9999990299165376093856' to equal '10000029899165376093856'
+      + expected - actual
+
+      -9999990299165376093856
+      +10000029899165376093856
+      
+      at FragmentRunningEvent.<anonymous> (test/unit/Raffle.test.js:171:38)
+
+
+
+·-----------------------------------------------|----------------------------|-------------|-----------------------------·
+|              Solc version: 0.8.7              ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
+················································|····························|·············|······························
+|  Methods                                                                                                               │
+·························|······················|··············|·············|·············|···············|··············
+|  Contract              ·  Method              ·  Min         ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+·························|······················|··············|·············|·············|···············|··············
+|  Raffle                ·  enterRaffle         ·       74208  ·      91308  ·      87644  ·           14  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  Raffle                ·  performUpkeep       ·           -  ·          -  ·     101777  ·            7  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  addConsumer         ·           -  ·          -  ·      71433  ·            1  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  createSubscription  ·           -  ·          -  ·      68660  ·            2  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  fulfillRandomWords  ·           -  ·          -  ·     111252  ·            1  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock  ·  fundSubscription    ·           -  ·          -  ·      30433  ·            1  ·          -  │
+·························|······················|··············|·············|·············|···············|··············
+|  Deployments                                  ·                                          ·  % of limit   ·             │
+················································|··············|·············|·············|···············|··············
+|  Raffle                                       ·           -  ·          -  ·    1349332  ·        4.5 %  ·          -  │
+················································|··············|·············|·············|···············|··············
+|  VRFCoordinatorV2Mock                         ·           -  ·          -  ·    2984688  ·        9.9 %  ·          -  │
+·-----------------------------------------------|--------------|-------------|-------------|---------------|-------------·

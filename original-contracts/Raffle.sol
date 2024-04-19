@@ -17,9 +17,9 @@ error Raffle__SendMoreToEnterRaffle();
 error Raffle__RaffleNotOpen();
 
 /**
- * @title A Modified Raffle Contract with a "PrizeMultiplier"
- * @author Patrick Collins and Joshua Gorospe
- * @notice I modified the sample raffle contract that Patrick Collins created to include a "calculatePrizeMultiplier" that increases the "winnings" based on the given "entranceFee".
+ * @title A sample Raffle Contract
+ * @author Patrick Collins
+ * @notice This contract is for creating a sample raffle contract
  * @dev This implements the Chainlink VRF Version 2
  */
 contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
@@ -45,8 +45,6 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
     address private s_recentWinner;
     address payable[] private s_players;
     RaffleState private s_raffleState;
-
-    mapping(address => uint256) public entranceFeeToMultiplier; // From Joshua: Map entrance fee amounts to multipliers
 
     /* Events */
     event RequestedRaffleWinner(uint256 indexed requestId);
@@ -84,23 +82,7 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
         s_players.push(payable(msg.sender));
         // Emit an event when we update a dynamic array or mapping
         // Named events with the function name reversed
-        uint256 multiplier = calculatePrizeMultiplier(msg.value);
-        entranceFeeToMultiplier[msg.sender] = multiplier;
         emit RaffleEnter(msg.sender);
-    }
-
-    /**
-     * @dev From Joshua: This is the new "PrizeMultiplier" mechanism that increases the "winnings" based on the given "entranceFee".
-    */
-    function calculatePrizeMultiplier(uint256 entranceFeeWei) private pure returns (uint256) {
-    // From Joshua: Implement your multiplier logic here, e.g.,
-    if (entranceFeeWei >= 5 ether) {
-        return 5;  // From Joshua: Example -> 5x multiplier for 5 ETH or more
-    } else if (entranceFeeWei >= 1 ether) {
-        return 2; 
-    } else {
-        return 1; // From Joshua: Default 1x if under 1 ETH
-    }
     }
 
     /**
@@ -161,9 +143,7 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
         s_players = new address payable[](0);
         s_raffleState = RaffleState.OPEN;
         s_lastTimeStamp = block.timestamp;
-        uint256 multiplier = entranceFeeToMultiplier[recentWinner]; 
-        uint256 winnings = (address(this).balance * multiplier) / 100; // Assuming multiplier represents a percentage increase
-        (bool success,) = recentWinner.call{value: winnings}(""); 
+        (bool success,) = recentWinner.call{value: address(this).balance}("");
         // require(success, "Transfer failed");
         if (!success) {
             revert Raffle__TransferFailed();

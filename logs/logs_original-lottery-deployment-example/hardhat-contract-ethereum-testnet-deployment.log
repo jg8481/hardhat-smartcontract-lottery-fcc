@@ -1,0 +1,16 @@
+-------->>>> Deployment Results Log :: Start-Deployment-On-Real-Ethereum-Testnet :: Sepolia <<<<--------
+Compiled 11 Solidity files successfully (evm target: london).
+----------------------------------------------------
+reusing "Raffle" at 0x8b378fF69ECc3A0eF48485a10Bb501057Ccce954
+Verifying...
+Verifying contract...
+Nothing to compile
+Successfully submitted source code for contract
+contracts/Raffle.sol:Raffle at 0x8b378fF69ECc3A0eF48485a10Bb501057Ccce954
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract Raffle on Etherscan.
+https://sepolia.etherscan.io/address/0x8b378fF69ECc3A0eF48485a10Bb501057Ccce954#code
+Enter lottery with command:
+yarn hardhat run scripts/enter.js --network sepolia
+----------------------------------------------------

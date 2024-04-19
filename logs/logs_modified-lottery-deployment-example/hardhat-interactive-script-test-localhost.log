@@ -1,0 +1,21 @@
+
+Now running the modified.js interactive script to interact with the Lottery smart contract...
+
+yarn run v1.22.22
+$ /Users/jgorospe/Documents/GitHub/hardhat-smartcontract-lottery-fcc/node_modules/.bin/hardhat run scripts/modified.js --network localhost
+ 
+ 
+====>>>> Interactive Test Run Starting <<<<====
+ 
+ 
+This modified.js script will quickly check and interact with the deployed Modified Lottery smart contract from a local Hardhat Node. This modified smart contract will never be deployed to Testnet or Mainnet.
+ 
+ 
+Entered! This enterRaffle check passed and is using a modified version of Patrick's Lottery smart contract. It utilizes a new PrizeMultiplier that gives winners a bonus.
+ 
+ 
+====>>>> Interactive Test Run Finished <<<<====
+ 
+ 
+Done in 2.08s.
+
