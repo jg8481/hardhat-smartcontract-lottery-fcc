@@ -1,8 +1,10 @@
 These are my notes while working on [Patrick's Javascript Blockchain/Smart Contract FreeCodeCamp Course](https://www.youtube.com/watch?v=gyMwXuJrbJQ).
 
-- On April 18, 2024 successfully compiled and deployed the following modified "Lottery smart contract" example code using `hardhat deploy` on a locally installed Hardhat fake blockchain node. I used a similar build automation pipeline approach found in my [hardhat-fund-me-fcc](https://github.com/jg8481/hardhat-fund-me-fcc) fork.
+- On April 18, 2024 successfully compiled and deployed the following modified "Lottery smart contract" example code using `hardhat deploy` on a locally installed Hardhat fake blockchain node. I used a similar build automation pipeline approach found in my [hardhat-fund-me-fcc](https://github.com/jg8481/hardhat-fund-me-fcc) fork. I also checked the deployed example by using the `modified.js` script
 
+![alt text](./notes/image1.png)
 
+![alt text](./notes/image2.png)
 
 - On April 18, 2024 successfully compiled, deployed, and verified Patrick's original "Lottery smart contract" to the following address on Sepolia Testnet using my own Alchemy Sepolia Testnet RPC. I also checked it with an `enter.js` script by paying the entrance fee.
 
