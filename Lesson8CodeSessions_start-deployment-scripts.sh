@@ -168,7 +168,7 @@ usage_explanation() {
   echo
   echo "Then you can run the following combined commands in your terminal to deploy the contract to the Hardhat local blockchain node."
   echo
-  echo "bash ./Lesson8CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-A-Specific-Network hardhat"
+  echo "bash ./Lesson8CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment && bash ./Lesson8CodeSessions_start-deployment-scripts.sh Start-Deployment-On-A-Specific-Network hardhat"
   echo
   echo "You can also use the provided Lesson8CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline."
   echo
